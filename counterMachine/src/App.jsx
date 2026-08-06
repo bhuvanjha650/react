@@ -8,10 +8,16 @@ function App() {
   let [count, setCount] = useState(0)
 
   const addValue = () => {
-    setCount(count + 1)}
+    if (count < 10) setCount(count + 1)
+    if (count >= 10) alert("Karlo bhai, 10 se zyada nahi ho sakta")
+  }
 
     const reduce = () => {
-    setCount(count - 1)}
+    if(count > 0) setCount(count - 1)
+    if(count <= 0) alert("Karlo bhai, 0 se kam nahi ho sakta") 
+  }
+
+   
   
   
   return(
